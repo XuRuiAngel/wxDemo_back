@@ -12,16 +12,24 @@ public class Exam_Question {
 
     private double score;
 
-    public Exam_Question(int id, int examId, int questionId, double score) {
+    private int responseNum;
+
+    private int correctNum;
+
+    public Exam_Question(int id, int examId, int questionId, double score,int responseNum,int correctNum) {
         this.id = id;
         this.examId = examId;
         this.questionId = questionId;
         this.score = score;
+        this.responseNum=responseNum;
+        this.correctNum=correctNum;
     }
 
-    public Exam_Question(int examId, int questionId, double score) {
+    public Exam_Question(int examId, int questionId, double score,int responseNum,int correctNum) {
         this.examId = examId;
         this.questionId = questionId;
         this.score = score;
+        this.responseNum=responseNum;
+        this.correctNum=correctNum;
     }
 }
